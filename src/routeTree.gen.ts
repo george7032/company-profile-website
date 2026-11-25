@@ -10,33 +10,232 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AiAgentsRouteImport } from './routes/ai-agents'
+import { Route as AiAgentsInPracticeRouteImport } from './routes/ai-agents-in-practice'
+import { Route as BeforeAndAfterRouteImport } from './routes/before-and-after'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ContentsRouteImport } from './routes/contents'
+import { Route as HowWeWorkRouteImport } from './routes/how-we-work'
+import { Route as SelectedWorkRouteImport } from './routes/selected-work'
+import { Route as ServicesRouteImport } from './routes/services'
+import { Route as SystemFeaturesRouteImport } from './routes/system-features'
+import { Route as SystemsRouteImport } from './routes/systems'
+import { Route as TrustedByRouteImport } from './routes/trusted-by'
+import { Route as VisionAndMissionRouteImport } from './routes/vision-and-mission'
+import { Route as WhoWeServeRouteImport } from './routes/who-we-serve'
+import { Route as WhyZebnexRouteImport } from './routes/why-zebnex'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AiAgentsRoute = AiAgentsRouteImport.update({
+  id: '/ai-agents',
+  path: '/ai-agents',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AiAgentsInPracticeRoute = AiAgentsInPracticeRouteImport.update({
+  id: '/ai-agents-in-practice',
+  path: '/ai-agents-in-practice',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BeforeAndAfterRoute = BeforeAndAfterRouteImport.update({
+  id: '/before-and-after',
+  path: '/before-and-after',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContentsRoute = ContentsRouteImport.update({
+  id: '/contents',
+  path: '/contents',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HowWeWorkRoute = HowWeWorkRouteImport.update({
+  id: '/how-we-work',
+  path: '/how-we-work',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SelectedWorkRoute = SelectedWorkRouteImport.update({
+  id: '/selected-work',
+  path: '/selected-work',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SystemFeaturesRoute = SystemFeaturesRouteImport.update({
+  id: '/system-features',
+  path: '/system-features',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SystemsRoute = SystemsRouteImport.update({
+  id: '/systems',
+  path: '/systems',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TrustedByRoute = TrustedByRouteImport.update({
+  id: '/trusted-by',
+  path: '/trusted-by',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VisionAndMissionRoute = VisionAndMissionRouteImport.update({
+  id: '/vision-and-mission',
+  path: '/vision-and-mission',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhoWeServeRoute = WhoWeServeRouteImport.update({
+  id: '/who-we-serve',
+  path: '/who-we-serve',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhyZebnexRoute = WhyZebnexRouteImport.update({
+  id: '/why-zebnex',
+  path: '/why-zebnex',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/ai-agents': typeof AiAgentsRoute
+  '/ai-agents-in-practice': typeof AiAgentsInPracticeRoute
+  '/before-and-after': typeof BeforeAndAfterRoute
+  '/contact': typeof ContactRoute
+  '/contents': typeof ContentsRoute
+  '/how-we-work': typeof HowWeWorkRoute
+  '/selected-work': typeof SelectedWorkRoute
+  '/services': typeof ServicesRoute
+  '/system-features': typeof SystemFeaturesRoute
+  '/systems': typeof SystemsRoute
+  '/trusted-by': typeof TrustedByRoute
+  '/vision-and-mission': typeof VisionAndMissionRoute
+  '/who-we-serve': typeof WhoWeServeRoute
+  '/why-zebnex': typeof WhyZebnexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/ai-agents': typeof AiAgentsRoute
+  '/ai-agents-in-practice': typeof AiAgentsInPracticeRoute
+  '/before-and-after': typeof BeforeAndAfterRoute
+  '/contact': typeof ContactRoute
+  '/contents': typeof ContentsRoute
+  '/how-we-work': typeof HowWeWorkRoute
+  '/selected-work': typeof SelectedWorkRoute
+  '/services': typeof ServicesRoute
+  '/system-features': typeof SystemFeaturesRoute
+  '/systems': typeof SystemsRoute
+  '/trusted-by': typeof TrustedByRoute
+  '/vision-and-mission': typeof VisionAndMissionRoute
+  '/who-we-serve': typeof WhoWeServeRoute
+  '/why-zebnex': typeof WhyZebnexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/ai-agents': typeof AiAgentsRoute
+  '/ai-agents-in-practice': typeof AiAgentsInPracticeRoute
+  '/before-and-after': typeof BeforeAndAfterRoute
+  '/contact': typeof ContactRoute
+  '/contents': typeof ContentsRoute
+  '/how-we-work': typeof HowWeWorkRoute
+  '/selected-work': typeof SelectedWorkRoute
+  '/services': typeof ServicesRoute
+  '/system-features': typeof SystemFeaturesRoute
+  '/systems': typeof SystemsRoute
+  '/trusted-by': typeof TrustedByRoute
+  '/vision-and-mission': typeof VisionAndMissionRoute
+  '/who-we-serve': typeof WhoWeServeRoute
+  '/why-zebnex': typeof WhyZebnexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/ai-agents'
+    | '/ai-agents-in-practice'
+    | '/before-and-after'
+    | '/contact'
+    | '/contents'
+    | '/how-we-work'
+    | '/selected-work'
+    | '/services'
+    | '/system-features'
+    | '/systems'
+    | '/trusted-by'
+    | '/vision-and-mission'
+    | '/who-we-serve'
+    | '/why-zebnex'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/ai-agents'
+    | '/ai-agents-in-practice'
+    | '/before-and-after'
+    | '/contact'
+    | '/contents'
+    | '/how-we-work'
+    | '/selected-work'
+    | '/services'
+    | '/system-features'
+    | '/systems'
+    | '/trusted-by'
+    | '/vision-and-mission'
+    | '/who-we-serve'
+    | '/why-zebnex'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/ai-agents'
+    | '/ai-agents-in-practice'
+    | '/before-and-after'
+    | '/contact'
+    | '/contents'
+    | '/how-we-work'
+    | '/selected-work'
+    | '/services'
+    | '/system-features'
+    | '/systems'
+    | '/trusted-by'
+    | '/vision-and-mission'
+    | '/who-we-serve'
+    | '/why-zebnex'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AiAgentsRoute: typeof AiAgentsRoute
+  AiAgentsInPracticeRoute: typeof AiAgentsInPracticeRoute
+  BeforeAndAfterRoute: typeof BeforeAndAfterRoute
+  ContactRoute: typeof ContactRoute
+  ContentsRoute: typeof ContentsRoute
+  HowWeWorkRoute: typeof HowWeWorkRoute
+  SelectedWorkRoute: typeof SelectedWorkRoute
+  ServicesRoute: typeof ServicesRoute
+  SystemFeaturesRoute: typeof SystemFeaturesRoute
+  SystemsRoute: typeof SystemsRoute
+  TrustedByRoute: typeof TrustedByRoute
+  VisionAndMissionRoute: typeof VisionAndMissionRoute
+  WhoWeServeRoute: typeof WhoWeServeRoute
+  WhyZebnexRoute: typeof WhyZebnexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +247,131 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ai-agents': {
+      id: '/ai-agents'
+      path: '/ai-agents'
+      fullPath: '/ai-agents'
+      preLoaderRoute: typeof AiAgentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ai-agents-in-practice': {
+      id: '/ai-agents-in-practice'
+      path: '/ai-agents-in-practice'
+      fullPath: '/ai-agents-in-practice'
+      preLoaderRoute: typeof AiAgentsInPracticeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/before-and-after': {
+      id: '/before-and-after'
+      path: '/before-and-after'
+      fullPath: '/before-and-after'
+      preLoaderRoute: typeof BeforeAndAfterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contents': {
+      id: '/contents'
+      path: '/contents'
+      fullPath: '/contents'
+      preLoaderRoute: typeof ContentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/how-we-work': {
+      id: '/how-we-work'
+      path: '/how-we-work'
+      fullPath: '/how-we-work'
+      preLoaderRoute: typeof HowWeWorkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/selected-work': {
+      id: '/selected-work'
+      path: '/selected-work'
+      fullPath: '/selected-work'
+      preLoaderRoute: typeof SelectedWorkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/system-features': {
+      id: '/system-features'
+      path: '/system-features'
+      fullPath: '/system-features'
+      preLoaderRoute: typeof SystemFeaturesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/systems': {
+      id: '/systems'
+      path: '/systems'
+      fullPath: '/systems'
+      preLoaderRoute: typeof SystemsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/trusted-by': {
+      id: '/trusted-by'
+      path: '/trusted-by'
+      fullPath: '/trusted-by'
+      preLoaderRoute: typeof TrustedByRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vision-and-mission': {
+      id: '/vision-and-mission'
+      path: '/vision-and-mission'
+      fullPath: '/vision-and-mission'
+      preLoaderRoute: typeof VisionAndMissionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/who-we-serve': {
+      id: '/who-we-serve'
+      path: '/who-we-serve'
+      fullPath: '/who-we-serve'
+      preLoaderRoute: typeof WhoWeServeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/why-zebnex': {
+      id: '/why-zebnex'
+      path: '/why-zebnex'
+      fullPath: '/why-zebnex'
+      preLoaderRoute: typeof WhyZebnexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AiAgentsRoute: AiAgentsRoute,
+  AiAgentsInPracticeRoute: AiAgentsInPracticeRoute,
+  BeforeAndAfterRoute: BeforeAndAfterRoute,
+  ContactRoute: ContactRoute,
+  ContentsRoute: ContentsRoute,
+  HowWeWorkRoute: HowWeWorkRoute,
+  SelectedWorkRoute: SelectedWorkRoute,
+  ServicesRoute: ServicesRoute,
+  SystemFeaturesRoute: SystemFeaturesRoute,
+  SystemsRoute: SystemsRoute,
+  TrustedByRoute: TrustedByRoute,
+  VisionAndMissionRoute: VisionAndMissionRoute,
+  WhoWeServeRoute: WhoWeServeRoute,
+  WhyZebnexRoute: WhyZebnexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
