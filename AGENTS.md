@@ -28,3 +28,5 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+Company profile sections are separate TanStack routes; keep shared page framing in `src/components` and visual tokens in `src/styles.css` so every page stays independently navigable and visually consistent.
