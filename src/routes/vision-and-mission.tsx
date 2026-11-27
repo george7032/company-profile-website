@@ -13,10 +13,6 @@ function VisionMissionPage() {
   return (
     <main className="content-page">
       <PageIntro number={4} eyebrow="VISION AND MISSION" title="What we’re working towards." />
-      <div className="mission-banner">
-        <p className="eyebrow">Our purpose</p>
-        <p>Systems that show what is happening, reduce losses and automate routine work.</p>
-      </div>
       <div className="vision-mission-grid">
         <section className="statement-block">
           <Eye className="statement-icon" aria-hidden="true" />

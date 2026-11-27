@@ -207,9 +207,6 @@
 .company-details .detail-label { color: var(--night-muted); }
 .company-details .contact-value { color: var(--night-foreground); }
 
-.mission-banner { margin: 12px 0 18px; padding: 34px 38px; border-radius: 7px; background: var(--night); color: var(--night-foreground); }
-.mission-banner .eyebrow { color: oklch(0.76 0.11 255); }
-.mission-banner > p:last-child { max-width: 820px; margin: 0; font-size: 30px; font-weight: 800; line-height: 1.2; }
 .vision-mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .statement-block { min-height: 280px; padding: 30px; border: 1px solid var(--border); border-radius: 7px; background: var(--card); }
 .statement-icon { width: 28px; height: 28px; margin-bottom: 22px; color: var(--primary); }
@@ -394,8 +391,6 @@
   .company-details { padding: 25px 20px; }
   .company-details-grid { grid-template-columns: 1fr; gap: 18px; }
   .company-details .contact-item:last-child { grid-column: auto; }
-  .mission-banner { padding: 26px 22px; }
-  .mission-banner > p:last-child { font-size: 23px; }
   .statement-block { min-height: 0; padding: 24px; }
   .statement-block h2 { font-size: 22px; }
   .service-band { padding: 25px 21px; }

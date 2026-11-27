@@ -15,7 +15,7 @@ function ContentsPage() {
     <main className="content-page">
       <PageIntro number={2} eyebrow="CONTENTS" title="What’s inside." />
       <div className="contents-list">
-        {profilePages.slice(1).map((page) => (
+        {profilePages.slice(2).map((page) => (
           <Link className="contents-row" to={page.path} key={page.path}>
             <span className="contents-number">{String(page.number).padStart(2, "0")}</span>
             <span className="contents-title">{page.title}</span>
