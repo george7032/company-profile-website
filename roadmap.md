@@ -1,0 +1,1 @@
+- [x] Expand the home page with corporate company details while keeping the existing opening unchanged.
